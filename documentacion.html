@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Resumen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Press+Start+2P&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Header-->
+    <section>
+    <div class="container">
+        <div class="navbar-container">
+            <nav class="navbar navbar-ligh t navbar-expand-sm">
+                <a class="navbar-brand" href="#"><img src="./imagenes/coronaa.jpg" height="23px" hspace="7px"/>Pedro Llaneras <img src="./imagenes/coronaa.jpg" height="23px" hspace="7px" margin-bottom="10px"/></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                  <div class="navbar-collapse collapse xcol" id="navbarTogglerDemo01">
+                    
+                    <ul class="navbar-nav ms-auto me-auto xcol">
+                        <li class="nav-item xcol">
+                            <a class="nav-link" href="./index.html"> INTRO </a>
+                        </li><li class="nav-item xcol">
+                            <a class="nav-link" href="#informacion"> INFORMACION </a>
+                        </li>
+                        <li class="nav-item xcol">
+                            <a class="nav-link" href="#portafolio"> PORTFOLIO </a>
+                        </li>
+                        <li class="nav-item xcol" >
+                            <a class="nav-link" href="#contacto"> CONTACTO </a>
+                        </li>
+                        <li class="nav-item xcol">
+                            <a class="nav-link" href="./documentacion.html"> DOCUMENTACION </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div> 
+    
+    <div class="row especial my-row">
+        <div class="col-2 no-padding">
+            <ul class="lista" >
+                <li id="html" class="clasehtml xborder" onclick="elementosVisibles('html')">HTML</li>
+                <li id="css" class="clasecss xborder" onclick="elementosVisibles('css')">CSS</li>
+                <li id="bootstrap" class="clasebootstrap xborder" onclick="elementosVisibles('bootstrap')">BOOTSTRAP</li>
+                <li id="javascript" class="clasejavascript xborder" onclick="elementosVisibles('javascript')">JAVASCRIPT</li>
+                <li id="enlaces"class="claseenlaces xborder" onclick="elementosVisibles('enlaces')">ENLACES</li>
+                <li id="extensiones" class="claseextensiones xborder" onclick="elementosVisibles('extensiones')">EXTENSIONES</li>
+                <li id="funciones" class="clasefunciones xborder" onclick="elementosVisibles('funciones')">FUNCIONES</li>               
+            </ul>
+        </div>    
+        <div class="col-2 no-padding">
+            <div class="lista"> 
+                <ul class="html">
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'), listaInfo('html-encabezados')">ENCABEZADOS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-p')">PARRAFOS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-hr')">HR</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-br')">BR</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-ul')">UL</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-ol')">OL</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-nesting')">NESTING</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-a')">A</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-atributos')">ATRIBUTOS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-imaagenes')">IMAGENES</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-rutas')">RUTAS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-boilerplate')">BOILERPLATE</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-head')">HEAD</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-body')">BODY</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-title')">TITLE</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-divs')">DIVS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('html'),listaInfo('html-span')">SPAN</li>
+                </ul>
+      
+                <ul class="css">
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-carga')">CARGAR</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-color')">COLOR</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-selectores')">SELECTORES</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-tamaño-letra')">TAMAÑO LETRA</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-tipos-letra')">TIPOS LETRA</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-alineado-texto')">ALINEACION TEXTO</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-estilos')">ESTILOS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-prioridad-estilos')">PRIORIDAD ESTILOS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-posicionamiento')">POSICIONAMIENTO</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-circulo')">CIRCULO</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-display')">DISPLAY</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-float')">FLOAT</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-media-queries')">MEDIAS QUERIES</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-flexbox')">FLEXBOX</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-justify-content')">JUSTIFY CONTENT</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('css'),listaInfo('css-align-items')">ALIGN ITEMS</li>
+                </ul>
+                <ul class="bootstrap">
+                    <li class="elementovisible xborder" onclick="elementosVisibles('bootstrap'),listaInfo('bootstrap-link')" >LINK</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('bootstrap'),listaInfo('bootstrap-tamaños-cols')">TAMAÑOS COLS</li>                
+                </ul>
+                <ul class="javascript">
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-tipo-de-datos')">TIPOS DE DATOS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-tipo-de-metodos')">METODOS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-tipo-de-propiedades')">PROPIEDADES</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-tipo-de-funciones-predeterminadas')">FUNCIONES PREDETERMINADAS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-creacion-de-variables')">VARIABLES</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-concatenacion')">CONCATENACION</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-operaciones-aritmeticas')">OPERACIONES ARITMETICAS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-bucles')">BUCLES</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-operadores')">OPERADORES</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-array')">ARRAY</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-link-javascript-to-web')">LINK JS</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-documento-object-model')">DOM</li>
+                    <li class="elementovisible xborder" onclick="elementosVisibles('javascript'),listaInfo('javascript-debugger')">DEBUGGER</li>
+                    
+                </ul>
+                <ul class="enlaces">
+                    <li class="elementovisible xenlacesborder" onclick="elementosVisibles('enlaces'),listaInfo('enlaces-informacion')">INFORMACION</li>   
+                    <li class="elementovisible xenlacesborder" onclick="elementosVisibles('enlaces'),listaInfo('enlaces-ia')">IA</li>  
+                </ul>
+                <ul class="extensiones">
+                    <li class="elementovisible xborder" onclick="elementosVisibles('extensiones'),listaInfo('extensiones-visualstudio')">VISUAL STUDIO CODE</li>  
+                    <li class="elementovisible xborder" onclick="elementosVisibles('extensiones'),listaInfo('extensiones-google')">GOOGLE CHROME</li>   
+                </ul>
+                <ul class="funciones">
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion')">INFO</li> 
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion-comprobacion-capacidad-texto')">COMPROBACION TEXTO</li> 
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion-los-nombres-primera-letra-mayuscula')">1 LETRA NOMBRE MAYUSCULA</li> 
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion-get-milk')">GETMILK</li> 
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion-tiempo-de-vida')">TIEMPO DE VIDA</li> 
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion-calculadora-bmi')">CALCULADORA BMI</li> 
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion-isleap')">ISLEAP</li> 
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion-fizzbuzz')">FIZZBUZZ</li> 
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion-quien-paga-la-cena')">CENA</li> 
+                    <li class="elementovisible xborder" onclick="elementosVisibles('funciones'),listaInfo('funcion-calculadora')">CALCULADORA</li> 
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-7 m-4">
+            <div class="elementovisible enlaces-informacion">
+                <p><a href="https://stackoverflow.com/" target="_blank"><strong>Stackoverflow:</strong></a><span>Puedes ver preguntas ya respondidas o hacer 1 nueva pregunta y suelen ayudarte y contestar rapido</span></p>
+                <p><a href="https://www.nslookup.io/" target="_blank"><strong>Nslookup:</strong></a><span>Para poner un dominio y que nos devuelva la ip.</span></p>
+                <p><a href="https://www.broipsum.com/" target="_blank"><strong>Broipsum:</strong></a><span>Para crear parrafos de forma rapida  randoms.</span></p>
+                <p><a href="https://www.diffchecker.com/text-compare/" target="_blank"><strong>Diffchecker:</strong></a><span>Para comprar 2 textos y ver las diferencias o para comparar codigo.</span></p>
+                <p><a href="https://picsum.photos/" target="_blank"><strong>Picsum:</strong></a><span>Para poner fotos random, si al final de la web ponemos /200, te llama una foto con 200 x 200 pixeles. Puedes poner /el tamaño que quieras.</span></p>
+                <p><a href="https://github.com/" target="_blank"><strong>Github:</strong></a><span>Repositorio donde puedes subir tu codigo de programacion y subir paginas web gratis y te hace de servidor.<br>
+                    <ol>
+                        <li>Iniciar sesion.</li>
+                        <li>Click menu derecho al + y new repository.</li>
+                        <li>Ponemos la informacion.</li>
+                        <li>Cuando lo hemos creado si queremos subir los archivos tenemos que darle add files y upload files para subirlos.</li>
+                        <li>Confirmamos los cambios una vez subidos los archivos.</li>
+                        <li>Verificar que se han subido todos los archivos.</li>
+                        <li>En settings vamos a pages y en branch ponemos main , root y save.</li>
+                        <li>Esperar en esa pagina y ir refrescando cada minuto hasta que nos den el enlace de nuestra url con nuestra pagina subida.</li>
+                    </ol>
+                    <p><a href="https://colorhunt.co/" target="_blank"><strong>Colorhunt:</strong></a><span>Pagina para elegir diseño de colores.</span></p>
+                    <p><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"><strong>Bootstrap document:</strong></a><span>Documentacion de bootstrap</span></p>
+                    <p><a href="https://www.w3schools.com/bootstrap/bootstrap_templates.asp" target="_blank"><strong>Bootstrap templates:</strong></a><span>Templates de boostrap</span></p>
+            </div>
+            <div class="elementovisible enlaces-ia">
+                <p><a href="https://chat.openai.com/" target="_blank"><strong>ChatGPT:</strong></a><span>Puedes preguntarle lo que quieras, incluso pasarle codigo de programacion y te encuentra posibles errores en tu codigo.</span></p>
+            </div>
+            <div class="elementovisible extensiones-visualstudio">
+                <h2>Visual studio code:</h2>
+                <ul>
+                    <li>Live Preview: Visual studio code.</li>
+                    <li>Vscode-icons: Visual studio code.</li>
+                    <li>Prettier: Visual studio code.</li>
+                    
+                </ul>
+            </div>
+            <div class="elementovisible extensiones-google">
+                <h2>Google Chrome:</h2>
+                <ul>
+                    <li>Silktide: Extension de chrome que ayuda a personas con problemas a leer paginas.</li>
+                    <li>Pesticide: Extension de chrome, para depurar errores de css de una web, cuando lo activas se ven todos los divs invisibles.</li>
+                </ul>
+            </div>
+            <div class="elementovisible html-encabezados">
+                <h2>Jerarquía de Encabezados en HTML</h2>
+                <p>Los encabezados en HTML siguen una estructura jerárquica que va desde <code>&lt;h1&gt;</code>, el encabezado de mayor nivel, hasta <code>&lt;h6&gt;</code>, el de menor nivel. Mantener una jerarquía lógica es crucial para estructurar adecuadamente el contenido y asegurar una experiencia coherente para los usuarios. Se recomienda utilizar estos elementos de forma secuencial: <code>&lt;h1&gt;</code> seguido de <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, y así sucesivamente. Saltarse niveles, como pasar de <code>&lt;h1&gt;</code> directamente a <code>&lt;h3&gt;</code>, puede confundir tanto a los usuarios como a los motores de búsqueda, y deteriora la accesibilidad del sitio web.</p>
+                
+                <!-- Significado semántico -->
+                <h2>Importancia Semántica</h2>
+                <p>Los encabezados no solo cumplen una función visual, sino que aportan una estructura semántica al documento. Cada nivel de encabezado establece la importancia relativa del contenido que sigue, lo que permite a los navegadores, motores de búsqueda y tecnologías de asistencia, como lectores de pantalla, interpretar correctamente el orden y la importancia de la información. Esta estructura también facilita la navegación del documento para los usuarios que dependen de ayudas técnicas.</p>
+                
+                <!-- Estilos Predeterminados -->
+                <h2>Estilos Predeterminados</h2>
+                <p>Los navegadores aplican automáticamente ciertos estilos a los encabezados. Por ejemplo, el elemento <code>&lt;h1&gt;</code> suele aparecer con un tamaño de fuente más grande y en negrita, lo que visualmente lo diferencia del contenido general. No obstante, estos estilos predeterminados se pueden modificar mediante CSS, permitiendo personalizar el diseño del sitio web sin comprometer la jerarquía semántica.</p>
+                
+                <!-- Uso Correcto del Encabezado Principal -->
+                <h2>Uso Correcto del Encabezado Principal</h2>
+                <p>El elemento <code>&lt;h1&gt;</code> está reservado para el título principal de la página y debe usarse una única vez por documento. Esto permite que tanto los usuarios como los motores de búsqueda identifiquen rápidamente el tema principal de la página. Usar múltiples <code>&lt;h1&gt;</code> en la misma página puede causar confusión, afectar negativamente la optimización para motores de búsqueda (SEO) y reducir la claridad de la estructura del documento. Para subtemas o secciones adicionales, utiliza encabezados de nivel inferior (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, etc.).</p>
+                
+                <!-- Encabezados y SEO -->
+                <h2>Encabezados y SEO</h2>
+                <p>Los motores de búsqueda como Google utilizan los encabezados para comprender la estructura de una página y jerarquizar la importancia de su contenido. Un uso correcto de los encabezados puede mejorar la clasificación de tu página en los resultados de búsqueda, mientras que un mal uso, como la omisión de niveles o el uso excesivo de <code>&lt;h1&gt;</code>, puede penalizar la relevancia de la página. Asegúrate de usar palabras clave relevantes en tus encabezados, pero de manera natural y coherente con el contenido.</p>
+                
+                <!-- Accesibilidad y Encabezados -->
+                <h2>Accesibilidad y Navegación con Encabezados</h2>
+                <p>Los encabezados también juegan un papel clave en la accesibilidad. Los usuarios que dependen de lectores de pantalla pueden navegar más fácilmente por el contenido cuando los encabezados están correctamente jerarquizados. Los lectores de pantalla a menudo permiten saltar de un encabezado a otro, lo que facilita la localización de secciones específicas dentro del contenido. Por ello, seguir una estructura de encabezado clara y secuencial mejora considerablemente la usabilidad para personas con discapacidades visuales.</p>
+      
+                
+            </div>
+            <div class="elementovisible html-p" >
+                <h2>Párrafos en HTML</h2>
+                <p>El elemento <code>&lt;p&gt;</code> se utiliza para contener bloques de texto en HTML. Este elemento está diseñado exclusivamente para texto plano y no permite anidar otros elementos estructurales dentro de él. Aunque puedes incluir texto, enlaces o imágenes, agregar otros elementos complejos como tablas o listas dentro de un párrafo no es válido en HTML.</p>
+                
+                <!-- Separación automática -->
+                <h2>Separación Automática</h2>
+                <p>Los navegadores web representan los párrafos como bloques separados, añadiendo automáticamente un espacio antes y después de cada párrafo. Esto crea una separación visual clara, lo que mejora la legibilidad del contenido. Si deseas personalizar este espaciado, puedes hacerlo utilizando CSS para ajustar los márgenes entre párrafos según el diseño deseado.</p>
+                
+                <!-- Jerarquía y Estructura -->
+                <h2>Jerarquía y Estructura del Contenido</h2>
+                <p>El elemento <code>&lt;p&gt;</code> debe usarse únicamente para texto de contenido regular, como párrafos de información o descripciones. No se debe utilizar para títulos o encabezados importantes, ya que estos tienen su propia etiqueta semántica (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.). Respetar esta distinción asegura una estructura semántica clara y facilita la lectura y la accesibilidad del documento.</p>
+                
+                <!-- Estilos Predeterminados -->
+                <h2>Estilos Predeterminados</h2>
+                <p>De forma predeterminada, los navegadores aplican un estilo básico al elemento <code>&lt;p&gt;</code>, que incluye márgenes superior e inferior y un espaciado adicional entre párrafos. Estos estilos predeterminados son útiles para una presentación básica, pero se pueden personalizar utilizando CSS para adaptarse al diseño visual del sitio. El uso de propiedades como <code>margin</code> y <code>padding</code> te permite controlar el espaciado y la presentación de los párrafos en la página.</p>
+                
+                <!-- Accesibilidad y Usabilidad -->
+                <h2>Accesibilidad y Usabilidad</h2>
+                <p>Los párrafos también juegan un papel importante en la accesibilidad de una página web. Los lectores de pantalla y otras herramientas de asistencia dependen de una estructura semántica clara para proporcionar una experiencia de navegación fluida. Es esencial utilizar párrafos de manera adecuada para facilitar la comprensión y la navegación del contenido, especialmente para usuarios con discapacidades visuales o cognitivas.</p>
+                
+                <!-- Buenas Prácticas -->
+                <h2>Buenas Prácticas en el Uso de Párrafos</h2>
+                <p>Para un uso adecuado del elemento <code>&lt;p&gt;</code>, es recomendable que cada párrafo contenga una sola idea principal, lo que facilita la lectura y comprensión. Además, si un bloque de texto requiere mayor separación, como listas o citas, es mejor utilizar elementos específicos para cada caso (<code>&lt;ul&gt;</code>, <code>&lt;blockquote&gt;</code>, etc.) en lugar de abusar del uso de párrafos. Mantener párrafos cortos y bien estructurados mejora tanto la legibilidad como la experiencia del usuario.</p>
+            </div>
+            <div class="elementovisible html-hr">
+                <h2>El Elemento <code>&lt;hr&gt;</code> en HTML</h2>
+
+                <!-- Representación visual -->
+                <h3>Representación Visual</h3>
+                <p>El elemento <code>&lt;hr&gt;</code> se representa generalmente como una línea horizontal que se extiende a lo largo del contenedor en el que se encuentra. Aunque su apariencia predeterminada puede variar ligeramente entre navegadores, por lo general, se trata de una línea simple. Sin embargo, su apariencia puede ser personalizada con CSS para cambiar el color, el grosor o incluso el estilo de la línea (por ejemplo, sólida, punteada o rayada).</p>
+                
+                <!-- Uso semántico -->
+                <h3>Uso Semántico</h3>
+                <p>El elemento <code>&lt;hr&gt;</code> tiene un significado semántico más allá de su representación visual. Se utiliza para indicar una separación temática o un cambio de contexto en el contenido. Tradicionalmente, esta etiqueta marca una transición o división clara entre secciones de una página, como entre diferentes temas o bloques de información. No debe ser utilizado meramente como un elemento decorativo, sino que su empleo debe estar alineado con el contenido para mejorar la estructura lógica del documento.</p>
+                
+                <!-- Contenido -->
+                <h3>Etiqueta Vacía</h3>
+                <p>El elemento <code>&lt;hr&gt;</code> es una etiqueta vacía, lo que significa que no contiene contenido ni requiere una etiqueta de cierre. Se utiliza de manera autónoma y no puede contener otros elementos o texto en su interior. Al ser una etiqueta auto-contenida, su única función es representar una línea divisoria.</p>
+                
+                <!-- Atributos -->
+                <h3>Personalización mediante Atributos</h3>
+                <p>Históricamente, la etiqueta <code>&lt;hr&gt;</code> admitía varios atributos específicos como <code>align</code>, <code>color</code>, <code>size</code> y <code>width</code>, que permitían personalizar su apariencia directamente en HTML. Sin embargo, estos atributos se consideran obsoletos y es preferible utilizar CSS para la personalización visual. A través de CSS, se pueden modificar propiedades como:</p>
+                <ul>
+                  <li><code>border</code>: Para cambiar el estilo de la línea (sólida, punteada, rayada, etc.).</li>
+                  <li><code>width</code>: Para ajustar el ancho de la línea, ya sea en porcentaje o píxeles.</li>
+                  <li><code>height</code>: Para modificar el grosor de la línea.</li>
+                  <li><code>color</code>: Para cambiar el color de la línea.</li>
+                  <li><code>margin</code>: Para ajustar el espacio alrededor de la línea.</li>
+                </ul>
+                
+                <!-- Ejemplo de personalización en CSS -->
+                <h3>Ejemplo de Personalización con CSS</h3>
+                <p>El siguiente ejemplo muestra cómo personalizar un <code>&lt;hr&gt;</code> utilizando CSS:</p>
+                <pre><code>
+                hr {
+                  border: 0;
+                  height: 2px;
+                  background-color: #333;
+                  width: 80%;
+                  margin: 20px auto;
+                }
+                </code></pre>
+                <p>En este ejemplo, la línea horizontal se ha configurado para tener un grosor de 2 píxeles, un color de fondo oscuro, un ancho del 80% del contenedor y márgenes automáticos para centrarla.</p>
+                
+                <!-- Buenas Prácticas -->
+                <h3>Buenas Prácticas</h3>
+                <p>Para un uso adecuado del elemento <code>&lt;hr&gt;</code>, es recomendable emplearlo únicamente cuando haya un cambio significativo en el tema o contenido. Evita usar <code>&lt;hr&gt;</code> únicamente como elemento estético si no tiene un propósito lógico en la estructura de la página. Además, asegúrate de utilizar CSS en lugar de atributos HTML obsoletos para mantener una separación clara entre la estructura HTML y la presentación visual.</p>
+                
+            </div>
+            <div class="elementovisible html-br">
+                <h2>BR: </h2>
+                <p>El <code>&lt;br&gt;</code> es un elemento utilizado para hacer un salto de línea dentro de un texto o contenido en HTML. A diferencia de otros elementos, el <code>&lt;br&gt;</code> es una etiqueta vacía o nula, lo que significa que no tiene una etiqueta de cierre.</p>
+                <p>Representación visual: El <code>&lt;br&gt;</code> generalmente se muestra como un salto de línea, lo que significa que el texto o contenido después del <code>&lt;br&gt;</code> se coloca en una nueva línea. No crea un párrafo nuevo como lo haría el elemento <code>&lt;p&gt;</code>, sino que simplemente agrega un espacio vertical.</p>
+                <p>Uso: El <code>&lt;br&gt;</code> se utiliza cuando deseamos agregar un salto de línea dentro de un párrafo o contenido sin crear un nuevo párrafo completo. Por ejemplo, se puede utilizar para dividir líneas en una dirección o para separar líneas en una lista.</p>
+                
+            </div>
+            <div class="elementovisible html-ul">
+                <h2>UL: </h2>
+                <p>La etiqueta &lt;ul&gt; se utiliza para crear una lista desordenada de elementos:</p>
+
+                    <!-- Lista desordenada -->
+                    <ul>
+                        <li>Manzanas</li>
+                        <li>Plátanos</li>
+                        <li>Naranjas</li>
+                    </ul>
+                <p>Puedes incluir cualquier tipo de contenido dentro de cada elemento &lt;li&gt;, como texto, imágenes, enlaces, etc.</p>
+
+                    <p>&lt;ul&gt;<br>
+                    &nbsp &nbsp &nbsp &lt;li&gt;Manzanas&lt;/li&gt;<br>
+                    &nbsp &nbsp &nbsp &lt;li&gt;Plátanos&lt;/li&gt;<br>
+                    &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 3&lt;/li&gt;<br>
+                      &lt;/ul&gt;</p>
+                
+            </div>
+            <div class="elementovisible html-ol">
+                <h2>OL: </h2>
+
+                <p>La etiqueta &lt;ol&gt; se utiliza para crear una lista ordenada de elementos:</p>
+
+                    <!-- Lista ordenada -->
+                    <ol>
+                    <li>Tarea 1</li>
+                    <li>Tarea 2</li>
+                    <li>Tarea 3</li>
+                    </ol>
+                <p>Puedes incluir cualquier tipo de contenido dentro de cada elemento &lt;li&gt;, como texto, imágenes, enlaces, etc.</p>
+                
+                <p>La forma de hacer la apertura de etiqueta y cierre es: <br>
+                    &lt;ol&gt;<br>
+                    &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 1&lt;/li&gt;<br>
+                    &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 2&lt;/li&gt;<br>
+                    &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 3&lt;/li&gt;<br>
+                      &lt;/ol&gt; </p>
+                
+            </div>
+            <div class="elementovisible html-nesting">
+                <h2>NESTING: </h2>
+                <p>El "nesting" (anidamiento) en HTML se refiere a la práctica de colocar una lista dentro de otra lista. Es decir, tener una lista (ya sea ordenada &lt;ol&gt; o desordenada &lt;ul&gt;) que contiene elementos de lista &lt;li&gt;, y a su vez, algunos de esos elementos &lt;li&gt; contienen otra lista completa. Esto crea una estructura jerárquica que puede utilizarse para organizar y representar información de manera más compleja.</p>
+                <p>El anidamiento de listas es útil cuando deseas agrupar elementos relacionados dentro de una lista más grande o cuando necesitas organizar datos en varias capas. Por ejemplo, puedes tener una lista de tareas principales, donde cada tarea puede tener subtareas adicionales que están representadas mediante una lista secundaria anidada.</p>
+                    <ul>
+                        <li>Tarea 1</li>
+                        <li>Tarea 2
+                          <!-- Lista secundaria anidada -->
+                          <ul>
+                            <li>Subtarea 2.1</li>
+                            <li>Subtarea 2.2</li>
+                            <li>Subtarea 2.3</li>
+                          </ul>
+                        </li>
+                        <li>Tarea 3</li>
+                    </ul>
+                    &lt;ul&gt;<br>
+                    &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 1<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&lt;ul&gt;<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 1&lt;/li&gt;<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 2&lt;/li&gt;<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 3&lt;/li&gt;<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;ul&gt;<br>
+                    &nbsp &nbsp &nbsp&lt;/li&gt;<br>
+                     &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 2&lt;/li&gt;<br>
+                     &nbsp &nbsp &nbsp &lt;li&gt;Nombre del objeto 3&lt;/li&gt;<br>
+                      &lt;/ul&gt; </p>              
+            </div>
+            <div class="elementovisible html-a">
+                <h2>A:</h2>
+                <p>La etiqueta &lt;a&gt; en HTML se utiliza principalmente para crear hipervínculos, también conocidos como enlaces. Estos enlaces permiten a los usuarios navegar a otras páginas web, recursos en línea, o diferentes secciones dentro de la misma página. La etiqueta &lt;a&gt; necesita un atributo href para especificar la dirección a la que se redirigirá el usuario al hacer clic en el enlace.</p>
+                <p>Además de su uso como hipervínculo, también puedes utilizar la etiqueta &lt;a&gt; como un elemento interactivo dentro de tu página web. Por ejemplo, puedes agregar eventos de JavaScript para que algo suceda al hacer clic en el enlace, como mostrar un mensaje o realizar una acción específica.</p>
+                <p>Sin embargo, es importante recordar que la principal función de la etiqueta &lt;a&gt; es crear enlaces y, por lo tanto, es fundamental usarla para su propósito original y no como una etiqueta de escritura similar a los párrafos. El texto dentro de la etiqueta &lt;a&gt; debe ser descriptivo y relevante para el enlace al que redirige, para que los usuarios comprendan claramente su destino al leerlo antes de hacer clic en él.</p>
+            </div>
+            <div class="elementovisible html-atributos">
+                <h2>Atributos:</h2>
+                <p>Los atributos son elementos clave que se utilizan para agregar información adicional a las etiquetas HTML. Estos atributos proporcionan instrucciones y detalles específicos sobre cómo se debe comportar o presentar un elemento en particular dentro de una página web. Los atributos se colocan después de las etiquetas y se definen mediante el uso de pares clave-valor, donde el nombre del atributo representa la clave y el valor del atributo es la información que se quiere asignar.</p>
+                <p>Es importante mencionar que puedes incluir tantos atributos como desees detrás de una etiqueta, aunque no todos los atributos son aplicables a todas las etiquetas. Cada elemento HTML tiene un conjunto de atributos específicos que se pueden utilizar con él para personalizar su comportamiento y apariencia.</p>
+                <li>href: Permite establecer enlaces o referencias a ciertos puntos, como sitios web externos o diferentes secciones dentro de la misma página.</li> 
+                <li>src: Se utiliza para especificar la fuente de contenido multimedia, como imágenes, videos o audios.</li>
+                <li>alt: Proporciona un texto alternativo que se muestra cuando no se puede cargar una imagen. Esto es útil para la accesibilidad y para que los usuarios comprendan el contenido de la imagen, incluso si no pueden verla.</li>
+                <li>title: Muestra un texto descriptivo cuando el usuario pasa el cursor sobre el elemento con el atributo.</li>
+                <li>class y id: Se utilizan para asignar nombres o identificadores a elementos específicos para poder darles estilos o interactuar con ellos mediante CSS o JavaScript.</li>
+                <li>style: Permite aplicar estilos en línea directamente al elemento utilizando propiedades CSS.</li>
+                <li>width y height: Establecen las dimensiones de elementos como imágenes o tablas.</li>
+                <li>lang: Se utiliza para especificar el idioma del contenido en la página, lo que ayuda a los motores de búsqueda y dispositivos de asistencia a comprender mejor el contenido.</li>
+                </ul>
+            <p>En resumen, los atributos en HTML son elementos fundamentales que permiten personalizar y mejorar la funcionalidad, accesibilidad y presentación de los elementos dentro de una página web. Con una amplia variedad de atributos disponibles, los desarrolladores web pueden crear experiencias interactivas y atractivas para los usuarios al aprovechar todo el potencial que ofrece HTML.</p>            
+            </div>
+            <div class="elementovisible html-imaagenes">
+                <h2>IMG:</h2>
+                <p>La etiqueta &lt;img&gt; en HTML es un elemento nulo o vacío que se utiliza para incrustar imágenes en una página web. A diferencia de otras etiquetas que tienen contenido entre las etiquetas de apertura y cierre, la etiqueta &lt;img&gt; se cierra con un atributo especial llamado "self-closing" o "auto-closing", representado por el "/>" al final de la etiqueta de apertura. Esto se debe a 
+                    que la etiqueta &lt;img&gt; no necesita contenido interno, ya que su propósito es solo mostrar una imagen.</p>
+                <p>src: Este atributo es obligatorio y se utiliza para especificar la ruta o URL de la imagen que se va a mostrar. Es importante proporcionar la ruta correcta para que el navegador pueda cargar la imagen correctamente.</p>
+                <p>alt: Este atributo también es obligatorio y se utiliza para proporcionar un texto alternativo que se mostrará si la imagen no puede cargarse o si el usuario utiliza un lector de pantalla. El texto alternativo es esencial para la accesibilidad web, ya que permite a las personas con discapacidades visuales comprender el contenido de la imagen a través de su lector de pantalla.</p>
+                <p>Además de los atributos obligatorios, la etiqueta <img> también admite otros atributos opcionales para personalizar la presentación y comportamiento de la imagen, como width, height, title, style, entre otros. Estos atributos permiten ajustar el tamaño de la imagen, agregar un título descriptivo que aparecerá al pasar el cursor sobre la imagen, aplicar estilos en línea directamente a la imagen, etc.</p>
+            </div>
+            <div class="elementovisible html-rutas">
+                <h2>Rutas:</h2>
+                <p>Una ruta en el contexto de la web se refiere a la dirección o ubicación de un archivo o recurso en un sistema de archivos. En el contexto de HTML y el desarrollo web, una ruta se utiliza para especificar dónde se encuentra un archivo o recurso, como una página web, una imagen, un archivo de estilo CSS, un script de JavaScript, etc.</p>
+                <p>Las rutas se utilizan para indicar la ubicación de los archivos en relación con la ubicación actual del archivo HTML desde el cual se está haciendo referencia. Hay dos tipos principales de rutas utilizadas en el desarrollo web:</p>
+                <p>Ruta relativa: Es una ruta que se especifica en relación con la ubicación actual del archivo HTML. Las rutas relativas son más cortas y más fáciles de usar, ya que no incluyen la ruta completa desde la raíz del servidor. Se componen generalmente de dos partes: <br>
+                    Ruta ascendente (../): Se utiliza para subir un nivel en la jerarquía de carpetas, es decir, para apuntar a una carpeta que se encuentra por encima de la ubicación actual.<br>
+                    Ruta descendente (./): Se utiliza para especificar que el archivo está en la misma carpeta que el archivo HTML actual.</p>
+                <p>Ruta absoluta: Es una ruta que especifica la ubicación completa del archivo o recurso desde la raíz del servidor. Incluye toda la ruta desde el dominio o nombre del servidor hasta la ubicación exacta del archivo. Las rutas absolutas son útiles cuando se necesita especificar la ubicación exacta de un archivo independientemente de la ubicación del archivo HTML actual.</p>
+            </div>
+            <div class="elementovisible html-boilerplate">
+                <h2>Boilerplate:</h2>
+                <p>Un "boilerplate" en el contexto del desarrollo web se refiere a una estructura HTML, CSS y JavaScript básica y reutilizable que proporciona una base sólida para comenzar a construir un sitio web. Es una plantilla inicial que incluye los elementos y archivos comunes necesarios para iniciar un proyecto web, como las etiquetas básicas de HTML, la hoja de estilos CSS y los scripts de JavaScript.<br>
+                    El objetivo principal de un boilerplate es ahorrar tiempo y esfuerzo al inicio de un nuevo proyecto web, ya que proporciona una base predeterminada y consistente que se puede utilizar como punto de partida. En lugar de comenzar desde cero cada vez que se crea un sitio web, puedes utilizar un boilerplate para tener una estructura ya establecida y luego personalizarla según las necesidades específicas del proyecto.<br>
+                    &lt;!Doctype html&gt;<br>
+                &nbsp &nbsp &nbsp &lt;html lang ="es"&gt;<br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;head&gt;<br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &lt;meta charset="UTF-8"&gt;</br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &lt;title&gt;Titulo&lt;/title&gt;</br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;/head&gt;<br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;body&gt;<br>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp    &lt;h1&gt;Inicio&lt;/h1&gt;</br>            
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &lt;/body&gt;<br>
+                &nbsp &nbsp &nbsp &lt;/html&gt;
+                </p>
+            </div>
+            <div class="elementovisible html-head">
+                <h2>Head:</h2>
+                <p>El elemento &lt;head&gt; en HTML es una sección reservada para colocar metadatos, enlaces a recursos externos y otras etiquetas que proporcionan información y configuraciones para la página web, pero que no son visibles directamente para el usuario en el navegador. Es una parte esencial del documento HTML y se encuentra justo antes del elemento &lt;body&gt;.</p>
+                <p>Metadatos: Los metadatos son información adicional sobre el documento HTML y su contenido. Se agregan utilizando las etiquetas &lt;meta&gt;. Algunos metadatos comunes incluyen:</p>
+                <p>&lt;meta charset="UTF-8"&gt;: Especifica la codificación de caracteres utilizada en el documento (UTF-8 es una codificación ampliamente utilizada y compatible con muchos idiomas).</p>
+                <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;: Ayuda a que la página web se muestre correctamente en dispositivos móviles y define el nivel de zoom inicial.</p>
+                <p>&lt;meta name="description" content="Descripción de la página web"&gt;: Proporciona una breve descripción del contenido de la página para fines de indexación y presentación en los resultados de búsqueda.</p>
+                <p>Título de la página: El título de la página se define mediante la etiqueta &lt;title&gt;. Aparece en la pestaña o barra de título del navegador y es importante para la optimización de motores de búsqueda (SEO).</p>
+                <p>Enlaces a recursos externos: Los enlaces se definen utilizando las etiquetas &lt;link&gt;. Aquí es donde generalmente se vinculan hojas de estilo CSS, fuentes personalizadas, hojas de estilos de Bootstrap y otros recursos externos necesarios para el diseño y la funcionalidad del sitio.</p>
+                <p>Estilos internos o incrustados: También es posible incluir estilos CSS directamente en el &lt;head&gt; usando la etiqueta &lt;style&gt; Estos estilos se aplicarán globalmente a la página.</p>
+                <p>Scripts externos: Los scripts de JavaScript también se pueden incluir en el &lt;head&gt; utilizando la etiqueta &lt;script&gt;. Sin embargo, es común ubicar los scripts justo antes del cierre del &lt;body&gt; para mejorar el rendimiento de carga de la página.</p>
+                <p>Icono del sitio (favicon): Puedes definir un favicon, que es el pequeño ícono que aparece en la pestaña del navegador o junto al título de la página. Esto se hace mediante la etiqueta &lt;link&gt; con el atributo rel="icon".</p>
+                <p>En resumen, el &lt;head&gt; es una parte crítica del documento HTML donde se incluye información importante y configuraciones para la página web. Contiene metadatos, enlaces a recursos externos, el título de la página y otros elementos que ayudan a los navegadores y motores de búsqueda a entender y presentar correctamente el contenido del sitio.</p>
+            </div>
+            <div class="elementovisible html-body">
+                <h2>Body:</h2>
+                <p>El elemento &lt;body&gt; en HTML es el área principal de contenido visible para el usuario en el navegador. Es aquí donde se colocan todos los elementos que se mostrarán en la página web, como texto, imágenes, videos, formularios y otros elementos interactivos. El contenido dentro del &lt;body&gt; es lo que los usuarios ven y con lo que interactúan cuando visitan tu sitio web.</p>
+                <p>Texto: Puedes agregar párrafos, encabezados, listas y otros elementos de texto utilizando las etiquetas HTML correspondientes, como &lt;p&gt;, &lt;h1&gt;, &lt;ul&gt;, etc.</p>
+                <p>Imágenes y multimedia: Puedes insertar imágenes utilizando la etiqueta &lt;img&gt;, videos y audios usando las etiquetas &lt;video&gt; y &lt;audio&gt;, respectivamente.</p>
+                <p>Enlaces: Puedes crear hipervínculos utilizando la etiqueta &lt;a&gt;. Estos enlaces permiten a los usuarios navegar a otras páginas web o recursos relacionados.</p>ç
+                <p>Elementos interactivos: Puedes incluir formularios con campos de entrada, botones y casillas de verificación utilizando las etiquetas &lt;form&gt;, &lt;input&gt;, &lt;button&gt;, etc.</p>
+                <p>Estructura y diseño: Puedes utilizar elementos de diseño como &lt;div&gt; y &lt;span&gt; para crear secciones y agrupar contenido. Además, puedes aplicar estilos CSS para darle formato y diseño a los elementos.</p>
+            </div>
+            <div class="elementovisible html-title">
+                <h2>Title:</h2>
+                <p>El elemento &lt;title&gt; en HTML se utiliza para definir el título de la página web, que es el texto que aparece en la pestaña o ventana del navegador. Es uno de los elementos más importantes en la estructura de una página web, ya que no solo proporciona una descripción del contenido de la página, sino que también afecta la accesibilidad, el SEO y la experiencia del usuario.</p>
+            </div>
+            <div class="elementovisible html-divs">
+                <h2>Divs:</h2>
+                <p>En HTML, los elementos &lt;div&gt; son contenedores genéricos que se utilizan para agrupar y estructurar contenido dentro de una página web. La etiqueta &lt;div&gt; es una abreviatura de "division" (división en español) y se utiliza ampliamente para crear áreas o bloques de contenido que luego pueden ser estilizados o manipulados con CSS y JavaScript.</p>
+                <p>Es importante destacar que, aunque los &lt;div&gt; son muy versátiles y se utilizan ampliamente en el desarrollo web, también es esencial mantener una estructura semántica adecuada utilizando elementos HTML más específicos y significativos cuando sea posible. Esto ayuda a mejorar la accesibilidad y la indexación del contenido por parte de los motores de búsqueda, y también facilita la comprensión del código por parte de otros desarrolladores. Por lo tanto, se recomienda utilizar elementos semánticos como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, etc., cuando corresponda y reservar los &lt;div&gt; para casos en los que no exista un elemento semántico más adecuado.</p>
+            </div>
+            <div class="elementovisible html-span">
+                <h2>Span:</h2>
+                <p>En HTML, el elemento &lt;span&gt; es un contenedor en línea que se utiliza para aplicar estilos o manipular partes específicas de un texto dentro de un párrafo u otro elemento de bloque. A diferencia del elemento &lt;div&gt;, que es un contenedor en bloque, el &lt;span&gt; no agrega saltos de línea y se comporta como una "caja invisible" que envuelve únicamente el contenido que contiene.</p>
+                <p>El uso principal del elemento &lt;span&gt; es para aplicar estilos CSS o agregar clases o identificadores que permitan seleccionar y modificar partes específicas de un texto sin afectar al diseño general del párrafo o elemento que lo contiene.</p>
+            </div>
+            <div class="elementovisible css-carga">
+                <h2>Cargar css en html:</h2>
+                <p>Existen 3 formas de usar CSS en el html:<br>
+                <ol>
+                    <li>Desde la misma linea del html poniendo &lt;p style="lo que queramos cambiar : valor" &gt; ejemplo.<br>
+                        &lt;p style="background:blue" &gt; </li>
+                    <li>Desde el html poniendo <br>
+                        &lt;style &gt;<br>
+                        background:blue <br>
+                         &lt;/style &gt; </li>
+                    <li>Desde un archivo.css poniendolo en el header <br>
+                        &lt;link rel="stylesheet" href="nombrearchivo.css"  &gt;  </li>
+                </ol></p>
+            </div>
+            <div class="elementovisible css-color">
+                <h2>Colores en CSS:</h2>
+                <p>color:white; (Para poner las letras texto de un color)<br>
+                    background:red; (Para poner el fondo de atras de ese color)
+                </p>
+                <h3>Significado colores:</h3>
+                <p>Rojo = Amor - Energia - Intensidad</p> 
+                <p>Amarillo = Alegria - Intelecto - Atencion</p> 
+                <p>Verde = Frescura - Crecimiento - Seguridad</p> 
+                <p>Azul = Estabilidad - Confianza - Serenidad</p> 
+                <p>Lila = Realeza - Riqueza - Feminidad</p> 
+            </div>
+            <div class="elementovisible css-selectores">
+                <h2>Selector en CSS:</h2>
+                <p>Selector tag es para selecionar una etiqueta que queremos cambiarle los estilos en concreto, podemos selecionarla de varias formas.
+                    <ol>
+                        <li>Poniendo al tag una clase ejemplo.<br>
+                            &lt;p class="color-rojo" &gt;  
+                        </li>
+                        <li>Poniendo al tag una id ejemplo.<br>
+                                &lt;p id="color-rojo" &gt;  
+                        </li>
+                        <li>Si ponemos en el archivo .css *{<br>
+                            Afecta a todas las etiquetas
+                        }
+                        <br>      
+                        </li>                               
+                    </ol>
+                    Para luego selecionar esa clase en el archivo .css tenemos que poner .nombreClase{<br>
+                        Lo que quieras ejecutar<br>
+                    }<br>
+                    Ejemplo real con los ejemplos que tenemos arriba. <br>
+                    .color-rojo {<br>
+                        color:red;<br>
+                    }<br>
+                    Ahora en tu html a todas las etiquetas que le pongas de clase .color-rojo, le pintara el texto de color rojo y para selecionar un id tenemos que poner #nombredelid { <br>
+                        lo que queramos hacer con ese id <br>
+                    } 
+                </p>
+                <p>Tambien podemos apuntar a un elemento despues de una clase ejemplo .color-red p{<br>
+                    lo que queremos que haga, de esta forma solo apuntar a los parrafos que tengan la clase .color-red<br>
+                }
+                </p>
+                <p>Podemos poner los mismos estilos a varios selectores separandolos con coma, ejemplo <br>
+                p,h2{<br>
+                    color:red; (de esta forma esta poniendo el texto de color rojo a varias etiquetas.)<br>
+                }</p>
+                <p>
+                    Podemos apuntar a los hijos de un selector ejemplo<br>
+                    div > p{<br>
+                        y el codigo solo afectara a los parrafos que esten dentro del div<br>
+                    }
+                </p>               
+            </div>
+            <div class="elementovisible css-tamaño-letra">
+                <h2>Tamaño de letra en CSS:</h2>
+                <ul>
+                    <li>Tenemos pixel, que mide 0.26mm, se escribe px</li>
+                    <li>Tenemos point, que mide 0.35mm, se escribe pt</li>
+                    <li>Tenemos em, que mide el 100% de la etiqueta padre body-footer, se escibe em, (Si el body tiene 20px de letra y ponemos 2em, es 20x2 = 40px)</li>
+                    <li>Tenemos rem, que mide el 100% de la etiqueta html es decir el root, se escribe rem</li>
+                </ul>           
+            </div>
+            <div class="elementovisible css-tipos-letra">
+                <h2>Tipos de letra en CSS:</h2>
+                <ul>
+                   <li>font-size: para selecionar el tamaño de letra que queremos</li>
+                   <li>font-family: para selecionar que tipo de fuente queremos utilizar</li>
+                   <li>font-weight: para selecionar si queremos bold,lighter bolder y parametros entre 100-900</li>
+                </ul>           
+                <p>Para font-family, muy recomendable serif, sans-serif.</p>
+                <p>Lo normal en una linea de texto para que lea alguien comodamente es entre 40 y 60 caracteres por linea.</p>
+                <p>Hacer que todos los textos tengan el mismo alineado o los maximos posibles.</p>
+                <p>Dejar espacio en blanco entre objetos, los hace parecer mas atractivos.</p>
+            </div>
+            <div class="elementovisible css-alineado-texto">
+                <h2>text-align:</h2>
+                <ul>
+                   <li>Center: para el centro</li>
+                   <li>Left: para la izquierda</li>
+                   <li>Right: para la derecha</li>
+                   <li>Start: para el principio</li>
+                   <li>End: para el final</li>
+                </ul>           
+            </div>
+            <div class="elementovisible css-estilos">
+                <h2>Estilos:</h2>
+                <ul>
+                   <li>Weight: Ancho ,se puede medir por px o por %</li>
+                   <li>Height: Alto, se puede medir por px o por % (o 100vh; que es para mover el div hacia el centro y si quieres moverlo hacia arriba puedes poner numero en negativo)</li>
+                   <li>Border: se pone con 3 parametros (1 parametro pixeles que quieres, 2 parametro solido o dashed, 3 parametro color del border)<br>
+                    Despues de poner border a todo un elemento, puedes decidir que 1 de los 4 lados no tenga borde, poniendo border-top,left,rigth,bottom: 0px a si 3 lados tienen y 1 no.</li>
+                   <li>Border-width: se le puede poner 4 parametros, si ponemos 4, el 1 represente top, el 2 derecha, el 3 abajo, el 4 izquierda va en el sentido de las agujas del reloj comenzando por la parte de arriba<br>
+                    si solo ponemos 2 parametros el 1 represente arriba y abajo y el 2 los lados.</li>
+                   <li>Padding: Empuja el contenedor del elemento por los 4 lados haciendole mas espacio. Se le puede poner 4 parametros, si ponemos 4, el 1 represente top, el 2 derecha, el 3 abajo, el 4 izquierda va en el sentido de las agujas del reloj comenzando por la parte de arriba<br>
+                    si solo ponemos 2 parametros el 1 represente arriba y abajo y el 2 los lados. <br>
+                Tambien se pueden poner individuales poniendo padding-top,bottom,left,rigth</li>
+                <li>Margin: Empuja el contenedor por fuera para moverlo. Se le puede poner 4 parametros, si ponemos 4, el 1 represente top, el 2 derecha, el 3 abajo, el 4 izquierda va en el sentido de las agujas del reloj comenzando por la parte de arriba<br>
+                    si solo ponemos 2 parametros el 1 represente arriba y abajo y el 2 los lados. <br>
+                Tambien se pueden poner individuales poniendo Margin-top,bottom,left,rigth</li>
+                <li>list-style:none; para quitar los puntis de estilo de las listas desordenadas</li>
+                <li>list-style:none; para quitar los puntis de estilo de las listas desordenadas</li>
+                </ul>           
+            </div>
+            <div class="elementovisible css-prioridad-estilos">
+                <h2>Prioridad:</h2>
+                <ol>
+                  <li>Los estilos que ponemos inline &lt;p id="color-rojo" &gt;  </li>
+                  <li>Los estilos que ponemos en el documento entre  &lt;style &gt;id="color-rojo"&lt;/style &gt;  </li>
+                  <li>Los estilos que ponemos al documento que lo linkeamos en el header. </li>
+                </ol>           
+                <p>Aparte de este tipo de prioridad tambien tenemos por tipo.</p>
+                <ol>
+                    <li>ID</li>
+                    <li>Atributo</li>
+                    <li>Clase</li>
+                    <li>Elemento</li>
+                </ol>
+                <p>Tambien podemos poner a 1 estilo !important; y se vuelve prioridad 1 en regla de CSS</p>
+            </div>
+            <div class="elementovisible css-posicionamiento">
+                <h2>Posicionamiento:</h2>
+                <p>Existen 4 tipos de posicionamiento</p>
+                <ol>
+                    <li>Static:Este es el valor predeterminado de html, va encima de otro y no se puede mover</li>
+                    <li>Relative: Puedes moverlo dandole instrucciones left:px; - lo mismo para top,bottom,rigth</li>
+                    <li>Absolute: Es para que vaya donde hay 1 relative podemos perle profundidad con z-index:numero para ver cual se posiciona encima el que mayor z-index tenga es el que se ve por delante.</li>
+                    <li>Fixed:Es para dejar 1 div fijado y vaya bajando aunque la persona haga scroll hacia abajo te persigue.</li>
+                </ol>
+            </div>
+            <div class="elementovisible css-circulo">
+                <h2>Circulo con CSS:</h2>
+                <p>background-color:red;<br>
+                width: 200px<br>
+                height: 200px<br>
+                border-radius: 50%</p>            
+            </div>
+            <div class="elementovisible css-display">
+                <h2>Display en CSS:</h2>
+                <ol>
+                    <li>Block: es lo que viene por defecto en casi todos los elementos de HTML, que se posicionan 1 debajo de otro.</li>
+                    <li>Inline: se pone en la misma fila</li>
+                    <li>Inline-block: Te permite darle altura y ancho para que puedas hacerlo como quieras.</li>
+                    <li>None: Desaparece</li>
+                    <li>inline-flex: para que solo use el contenido que tiene el elemneto y no usemas ancho del que toca, el flex si te pasas de pixeles no te vas hacia abajo.</li>
+                </ol>
+              
+            </div>
+            <div class="elementovisible css-float">
+                <h2>Float en CSS:</h2>
+                <p>Puedes poner 1 div en float left, para que se vayan posicionando a la izquierda y cuando quieras que el siguiente elemento no se ponga en la izquierda, puedes usar el clear:left,right o both.<br>
+                    Puedes poner 1 imagen float left y un texto que envuelva la imagen de esa forma queda tipo periodico.</p>
+              
+            </div>
+            <div class="elementovisible css-media-queries">
+                <h2>Mediaqueries en CSS:</h2>
+             <p>Las mediaQueries es la forma de hacer que la web sea responsive, que cuando llegue la web a cierto tamaño ejecute otro tipo de css</p>
+             <ol>
+                <li>Moviles 319px-480px</li>
+                <li>Ipads 481px-1200px</li>
+                <li>Portatiles 1201px-1600px</li>
+                <li>Ordenadores mas de 1600px</li>
+             </ol>
+             <p>La forma de hacer una mediaqueri ejemplo:<br>
+                @media (min-width:600px){<br>
+                    Las instrucciones que quieras cambiar<br>
+                }
+             </p>
+             <p>Tambien se pueden hacer mediaqueries con las 2 a la vez min and width:<br>
+                @media (min-width:600px) and (max-width:900px){<br>
+                    Las instrucciones que quieras cambiar<br>
+                }
+             </p>
+              
+            </div>
+            <div class="elementovisible css-flexbox">
+                <h2>Flexbox en CSS:</h2>
+             <p>Puedes ponerle a una caja el estilo de css display box, de esa forma todas las demas etiquetas que metas dentro de la caja se iran posicionando inline en vez de block.<br>
+            Puedes ponerle el estilo gap:10px; (los pixeles que quieras) para separar los elementos.</p>
+            <p>Flex-basis: 100px; esto es para hacer que todos los elementos de la caja tengan un alto o ancho 100px dependiendo de la direccion de flex-direction, el flex basis puedes aplicarlo a solo un elemento o varios no tiene por que ser a todo el contenedor.</p>
+            <p>Flex-direction: row o column;</p>
+            <p>Puedes intercambiar el orden del posicionamiento de los divs poniendo order: numero; el numero mas alto se posiciona en el lado derecho</p>
+            <p>flex-wrap:wrap; esto es para cuando no nos queda espacio en el flex y nuestros elementos no se ven, si lo ponemos en wrap los empuja al siguiente row, es una propiedad para el div padre.</p>  
+            <p>max-widt: 100px; se puede poner pixeles maximo de anchura, el max width tiene mas fuerza que el flex-basis, si el max-width dice 100px y el flex-basis 200px, sera 100px.</p>   
+            <p>flex-grow: 1; buscar mas informacion</p>    
+            <p>flex-shrink: 1; buscar mas informacion</p> 
+            <p>flex: podemos pasar 3 parametros (el 1 sera grow, el 2 shrink y el 3 basis)</p>      
+            </div>
+            <div class="elementovisible css-justify-content">
+                <h2>Justify content en CSS:</h2>
+                <p>es un atributo para el div padre</p>
+                <p>ya se pondra mas informacion y con imagenes</p>
+                <p>puede ser flex-start,end,center,space-beetwen,space-around</p>
+            </div>
+            <div class="elementovisible css-align-items">
+                <h2>Align items en CSS:</h2>
+                <p>El atributo align-items es parte de la especificación de Flexbox en CSS y se utiliza para alinear y distribuir los elementos secundarios (hijos) dentro de un contenedor flexible (padre) a lo largo del eje transversal. Es decir, controla cómo se alinean los elementos en la dirección perpendicular al eje principal del contenedor</p>
+                <p>Los posibles valores para align-items son los siguientes:</p>
+                <p>flex-start: Los elementos se alinearán al inicio del eje transversal del contenedor. En el caso del eje vertical, esto significa que los elementos se alinearán en la parte superior del contenedor.</p>
+                <p>flex-end: Los elementos se alinearán al final del eje transversal del contenedor. En el caso del eje vertical, esto significa que los elementos se alinearán en la parte inferior del contenedor.</p>
+                <p>center: Los elementos se alinearán en el centro del eje transversal del contenedor.</p>
+                <p>baseline: Los elementos se alinearán en su línea base, lo que significa que sus líneas de base estarán alineadas entre sí.</p>
+                <p>stretch: Esta opción es el valor predeterminado. Los elementos se estirarán para ocupar todo el espacio disponible en el eje transversal del contenedor.</p>
+                <p>space-between: Los elementos se distribuirán equitativamente a lo largo del eje transversal, con el primer elemento alineado al inicio y el último elemento alineado al final.</p>
+                <p>space-around: Los elementos se distribuirán equitativamente a lo largo del eje transversal, con espacios iguales entre ellos, incluso antes del primer elemento y después del último elemento.</p>
+            </div>    
+            <div class="elementovisible bootstrap-link">
+                <h2>Bootstrap link:</h2>
+                 <p>Para poder usar bootstrap primero tenemos que enlazarlo al html para que pueda leer las clases.<br><br>
+                &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"&gt;<br><br>
+                &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"&gt;</script><br><br>
+                &lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"&gt;</script><br><br>
+                &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"&gt;</script><br><br>
+                El primero en el head, los otros 3 al final del body justo encima de la etiqueta de cierre.</p>
+                 
+            </div>
+            <div class="elementovisible bootstrap-tamaños-cols">
+                <table class="table">
+                    <thead>
+                      <tr>                       
+                        <th scope="col">Tamaño</th>
+                        <th scope="col">Abreviatura</th>
+                        <th scope="col">Pixeles</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>                      
+                        <td>Small</td>
+                        <td>sm</td>
+                        <td>&lt;576px</td>
+                      </tr>
+                      <tr>
+                        <td>Medium</td>
+                        <td>md</td>
+                        <td>&gt;576px</td>
+                      </tr>
+                      <tr>
+                        <td>Large</td>
+                        <td>lg</td>
+                        <td>&gt;768px</td>
+                      </tr>
+                      <tr>
+                        <td>Extra large</td>
+                        <td>xl</td>
+                        <td>&lt;1200px</td>
+                      </tr>
+                      <tr>
+                        <td>Extra extra large</td>
+                        <td>xxl</td>
+                        <td>&lt;1400px</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+           </div>
+            <div class="elementovisible javascript-tipo-de-datos">
+                <h2>Tipos de datos javascript:</h2>
+                <p>String (Cadena de texto): Representa una secuencia de caracteres y se define entre comillas, ya sea simples ('') o dobles ("").</p>
+                <p>Number (Número): Representa valores numéricos, ya sean enteros o números decimales. También puede incluir valores especiales como Infinity y NaN (Not a Number).</p>
+                <p>Boolean: Representa un valor lógico y puede ser true (verdadero) o false (falso). Es utilizado para realizar evaluaciones condicionales en el código.</p>
+                <p>Undefined: Representa una variable que ha sido declarada pero no ha sido inicializada, o una propiedad que no ha sido asignada.</p>     
+                <p>Null: Representa un valor nulo o vacío.</p>    
+                <p>Object (Objeto): Representa una colección de propiedades relacionadas entre sí. Puede contener propiedades que son de otros tipos de datos, como strings, numbers, boolean, y también otras funciones u objetos.</p>    
+                <p>Array (Arreglo): Representa una lista ordenada de elementos. Los elementos pueden ser de cualquier tipo de dato y se acceden mediante un índice numérico.</p>    
+                <p>Function (Función): Representa un bloque de código reutilizable que puede ser invocado por su nombre. Las funciones pueden recibir argumentos y devolver un resultado.</p>    
+                <p>Symbol: Representa un identificador único e inmutable que se utiliza como clave en las propiedades de los objetos.</p>           
+            </div>
+            <div class="elementovisible javascript-tipo-de-metodos">
+                <h2>Tipos de metodos javascript:</h2>
+                <p> nombreVariable.toUpperCase(); <br>
+                    Cambia todos los caracteres de tu variable o cadena de string a mayusculas, si luego llamamos a esa variable sigue siendo minuscula a no ser que lo guardes de esta forma.<br>
+                    nombreDeVariable = nombreDeVariable.toUpperCase <br>
+                    De esta forma tu variable quedara guardada en mayuscula.<hr>
+                    nombreVariable.toLowerCase(); <br>
+                    Cambia todos los caracteres de tu variable o cadena de string a minusculas, si luego llamamos a esa variable sigue siendo mayusculas a no ser que lo guardes de esta forma.<br>
+                    nombreDeVariable = nombreDeVariable.toLowerCase <br>
+                    De esta forma tu variable quedara guardada en minusculas.<hr>
+                    Math.pow(se pasan 2 parametros, parametro 1 variable o numero, 2 parametro a cuanto quieres elevarlo)<br>
+                    var resultado = Math.pow(2 , 4);<hr>
+                    Math.random( es para crear un numero random, que tiene 16 digitos y es entre 0 y 0.9999999999999999)<br>
+                    var numero = Math.random();<br>
+                    El Math.random se usa mucho para hacer dados o numeros aleatorios, podemos multiplicar el math random por cualquier numero para que de esa forma llege a X numeros.<hr>
+                    Math.floor(es para que redonde los numeros a 1 numero entero.)<br>
+                    var numero = Math.floor(); podemos ponerle aqui operadores para que si queremos un dado de 1 a 6 y no queremos que salga el 0, ponemos + 1 y de esa forma el 0 ya no saldra<hr>
+                </p>                          
+            </div>
+            <div class="elementovisible javascript-tipo-de-propiedades">
+                <h2>Tipos de propiedades javascript:</h2>
+                <p>nombreVariable.length; <br>
+                Esto lo que hace es contar los caracteres que tiene la variable y te dice un numero entero.<hr>
+                nombreVariable.innerHTML = "lo que queramos";<br>
+                Aunque se suele utilizar mas con el DOM, el innerHTML y el textContent la diferencia que tienen es que el innerHTML te permite poner etiquetas.<br>
+                </p>                          
+            </div>
+            <div class="elementovisible javascript-tipo-de-funciones-predeterminadas">
+                <h2>Tipos de funciones predeterminadas de javascript:</h2>
+                <p>alert("lo que queramos, puede ser una variable sin las comillas dobles"); <br>
+                    Esto lo que hace es hacer un popup en la pantalla enseñando tu alerta.<hr>
+                    prompt("lo que queramos preguntarle al usuario para recoher la informacion"); <br>
+                    Esto lo que hace es hacer un popup con un input para que el usuario pueda contestarnos algo<hr>                     
+                    nombreVariable.slice(0,1); <br>
+                    El primer parametro de slice te indica desde donde quieres comenzar a cortar y el 2 parametro hasta donde quieres llegar a cortar, con 0,1 solo cotaria la 1 letra, si ponemos 0,10 cortara las 10 primeras letras.<hr>
+                </p>                   
+            </div>
+            <div class="elementovisible javascript-creacion-de-variables">
+                <h2>Crear variables javascript:</h2>
+                <p>Las variables no pueden comenzar de nombre por un numero, no pueden tener un nombre con espacios, de simbolos solo se puede usar el $ y el _, si una variable lleva 2 o + palabras, la primera palabra sera en minuscula y la 2 comenzara por mayuscula, metodo camello ejemplo, usuarioPuntuacionFinal</p>
+                <p>var nombreVariable = "Lo que queremos guardar"; , si es un numero no hay que poner las comillas o sera un string0 </p>      
+                <p>var nombreVariable = 3; , si es un numero no hay que poner las comillas o sera un string</p>  
+                <p>Podemos crear una variable con un prompt, para que cuando el usuario meta lo que le preguntemos guardarlo.<br>
+                var tuNombre = prompt("¿Como te llamas?");</p>             
+            </div>
+            <div class="elementovisible javascript-concatenacion">
+                <h2>Concatenacion javascript:</h2>  
+                <p>La concatenacion es para juntar cadenas de string con variables.</p>
+                <p>"Vamos hacer una suma de" + a + b + "el resultado es 10"</p>        
+            </div>
+            <div class="elementovisible javascript-operaciones-aritmeticas">
+                <h2>Operaciones aritmeticas javascript:</h2>  
+                <p>var suma = 3 + 5;<br>
+                    var resta = 5 - 3;<br>
+                    var multiplicacion = 5 * 3;<br>
+                    var division = 10 / 3;<br>
+                    var restoDeDivision = 10 % 3;<br>
+                <hr>
+                Tambien se puede sumar,restar,multiplicar,dividir,modulo var nombreVariable = nombreVariable + 1<br>
+                poniendo el operador que quieras mas el numero.<br>
+                La forma mas utilizada para sumar,restar 1 es nombreVariable++;<br>
+                Como las matematicas, si queremos que primero se ejecute algo que no tiene prioridad por los operadores, ponemos ponerlo de esta forma (3 + 5) * 8, para que primero haga la suma</p>
+                      
+            </div>
+            <div class="elementovisible javascript-bucles">
+                <h2>Bucles javascript:</h2>  
+                <p>if(edad &lt; 20){<br>
+                 console.log("eres muy joven")<br>
+                 } else {<br>
+                    console.log("comienzas a ser adulto")<br>
+                    }<br>
+                    De esta forma funcione el bucle if y tambien podemos poner else if, por si hay mas opciones.<hr>      
+                <p>while (condiciones){<br>
+                    Mientras la condicion no se cumpla, ejecutara esto, en cuanto deje de cumplirse saldra de este bucle.<br>
+                    }<hr>
+                </p>         
+                <p>
+                    for (3 parametros, 1 el start  i=0; 2 el end cuando finaliza el bucle for i &lt; 2; los cambios que va teniendo para que se cumpla i++;){<br>
+                        lo que quieres que haga<br>
+                    }<hr>
+                </p>
+                <p>El while se suele utilizar para condiciones booleanas de true or false y el bucle for para algo que sea muy repetitivo.</p><br>
+                </p>
+            </div>
+            <div class="elementovisible javascript-operadores">
+                <h2>Operadores javascript:</h2>  
+                <p> &lt; Menor que<br>
+                    &gt; Mayor que<br>
+                    &lt;= Menor o igual que<br>
+                    &gt;= Mayor o igual que<br>
+                    !== diferente que<br>
+                    == igual que<br>
+                    === igual que, (para confirmar si son iguales en lo que contiene + el tipo se usan 3 ===) <br>
+                    && AND<br>
+                    || OR<br>               
+                </p>                                       
+            </div>
+            <div class="elementovisible javascript-array">
+                <h2>Array javascript:</h2>  
+                <p>var nombreArray = [elemento 0, elemento 1, elemento 2]<br>
+                    Si ahora queremos usar uno de los elementos del array, podemos meterlo en una nueva variable de esta forma.<br>
+                    var nombreVariable2 = nombreArray[0]; de esta forma estamos cogiendo el 1 elemento de la lista.<hr>
+                    nombreArray.length; te dice cuantos elementos tiene el array en numero entero.<hr>
+                    Si queremos comprobar si ese dato ya esta dentro del array, podemos poner<br>
+                     nombreArray.includes(lo que queramos, si ya esta dentro del array devolvera true, si no esta dentro false.);<hr>
+                     nombreArray.push(lo que queramos meter dentro del array); y lo coloca al final del array el ultimo elemento. <hr>
+                     nombreArray.pop; elimina el ultimo elemento del array<hr>
+                    Podemos hacer que una array se convierta en length dentro de una variable para recorrer bucles for con la variable<hr>
+
+                </p>                                       
+            </div>
+            <div class="elementovisible javascript-link-javascript-to-web">
+                <h2>Como linkear javascript a la web:</h2> 
+                <p>Existen 3 formas igual que el CSS<br>
+                     1- &lt;body onload="alert('hello')"> desde la misma linea de la etiqueta<hr>
+                    2- &lt;script type="text/javascript" desde el mismo documento&gt; <br>
+                    alert("hello");<br>
+                    &lt;/script&gt;<hr>
+                    3-&lt;script src="index.js" charset="utf-8"&gt; desde otro documento externo <hr>
+                </p>                                     
+            </div>
+            <div class="elementovisible javascript-documento-object-model">
+                <h2>DOM javascript:</h2> 
+                <p>document.firstElementChild; (Esto nos devolvera el html ya que es la 1 etiqueta del documento).<br>
+                    el HTML tiene 2 hijos body y head.<br>
+                    document.firstElementChild.lastElementChild; (esto nos devolvera el body que es el ultimo hijo de html)<hr>
+                    document.getElementsByTagName("li"); selecionara todos los elementos li y te los devolvera en una matriz.<br>
+                    Si queremos selecionar algun en concreto de la matriz se hace asi <br>
+                    document.getElementsByTagName("li")[2].style.color="purple"; esto selecionara el elemento 3 de la matriz de li y pondra las letras de color purple<hr>
+                    document.getElementsByClassName("btn"); seleciona las clases btn, aunque solo tengas 1 te lo devolvera en forma de matriz<hr>
+                    document.getElementById("coche"); seleciona el 1 elemento con el id coche si queremos cambiar el color.<br>
+                    document.getElementById("coche").style.color"red";<hr>
+                    document.querySelector("li a"); de esta forma seleciona el 1 elemento que este dentro de una lista con la etiqueta a, tambien puede selecionar clases o ids poniendo .yelnomnbre o #yelnombre igual que en css.<hr>
+                    document.querySelectorAll("li"); este seleciona a todos los elementos li y te los devuelve en una matriz.<hr>
+                    document.querySelector("button").classList.add("la clase que queramos"); añade la clase que queramos al elemento que tenemos selecionado, si tenemos mas botones selecionara al 1.<hr>
+                    document.querySelector("button").classList.remove("la clase que queramos"); quita la clase que queramos al elemento que tenemos selecionado, si tenemos mas botones selecionara al 1.<hr>
+                    document.querySelector("button").classList.toggle("la clase que queramos"); alterna poner y quitar la clase que queramos al elemento que tenemos selecionado, si tenemos mas botones selecionara al 1.<hr>
+                    document.querySelector("a").attributes; los enseña los atributos que tiene y nos lo enseña en 1 matriz.<br>
+                    document.querySelector("a").getAttribute("nombre del atributo"); para coger el atributo<br>
+                    document.querySelector("a").setAttribute("1 parametro nombre del atributo que queremos cambiar y 2 parametro lo que queremos poner"); para cambiar el atributo<hr>
+                    document.querySelector("button").addEventListener(1 parametro type "click", 2 parametro listener o funcion); hace algo cuando se haga el evento<hr>
+                    Podemos poner variableNombre.addEventListener("click", function(){<br>
+                        console.log("me han hecho click");<br>
+                    });<br>
+                    
+                </p> 
+            </div>
+            <div class="elementovisible javascript-debugger">
+                    <h2>Debugger javascript:</h2> 
+                    <p>Podemos escribir debugger; en el codigo y de esa forma se depura el codigo pasando linea por linea.
+                    </p>                                      
+            </div>
+            <div class="elementovisible funcion-comprobacion-capacidad-texto">
+                <h2>Comprobacion de tweet capacidad cadena de texto:</h2>  
+                <p>var tweet = prompt("Compase your tweet");<br>
+                Guarda la informacion que nos ha metido el usuario en la variable tweet.<hr>
+                var tweetCount = tweet.length;<br>
+                Con length averiguamos cuantos caracteres tiene el tweet que metio el usuario.<hr>
+                alert("El tweet que has intentado meter tiene" + tweetCount + "puedes poner" + (140-tweetCount) + "estas letras.")<br>
+                Le enviamos en un pop cuantas letras puede meter o tiene que quitar.</p>                     
+            </div>
+            <div class="elementovisible funcion-los-nombres-primera-letra-mayuscula">
+                <h2>Poner primera letra mayuscula a los nombres:</h2>
+                <p> var name = pedro;<br>
+                    var firstCharName = name.slice(0,1);<br>
+                    var restCharName = name.slice(name.length);<br>
+                firstCharName = firstCharName.toUpperCase();<br>
+                restCharName = restCharName.toLowerCase();<br>
+                var nameComplete = firstCharName + restCharName;</p>                         
+            </div>
+            <div class="elementovisible funcion">
+                <h2>Funciones:</h2>
+                <p>Las funciones se inicializan de esta forma <br>
+                function nombreFuncion (parametros que queremos pasarle, pueden ser varias con comas) {<br>
+                    lo que queramos que haga la funcion, las funciones pueden tener un return para devolver una informacion.
+                }<br></p>                              
+            </div>
+            <div class="elementovisible funcion-get-milk">
+                <h2>Funcion getmilk:</h2>
+                <p> function getMilk (money){<br>
+                    var costBottleMilk = Math.floor(money / 1.5); (Precio de la botella es 1.5$)<br>
+                    return money % 1.5; (Devuelve lo que sobra)<br>
+                }<hr>
+                    Si ahora usamos la funcion getMilk(4) , le estamos pasando por parametro 4 dolares, si la botella vale 1.5, comprara 2 y sobrara 1$.<br>
+                    Si creamos una variable y ejecutamos la funcion de esta forma var cambio = getMilk(4); la variable change tendra el cambio que sobro de comprar leche.</p>                              
+            </div>
+            <div class="elementovisible funcion-tiempo-de-vida">
+                <h2>Funcion tiempo de vida si viviera hasta los 90:</h2>
+                <p> function vida (age){<br>
+                    var añosQueNosQuedan = 90 - age;<br>
+                    var diasQueNosQuedan = añosQueNosQuedan * 365;<br>
+                    var semanasQueNosQuedan = añosQueNosQuedan * 52;<br>
+                    var mesesQueNosQuedan = añosQueNosQuedan * 12;<br>
+                    alert("Te quedan tantos años" + añosQueNosQuedan + " tantos meses" + mesesQueNosQuedan + " tantas semanas" + semanasQueNosQuedan + "tantos dias" + diasQueNosQuedan + " de vida.");<br>
+                 }<br>
+                    Si ahora usamos la funcion vida(14) , le estamos pasando por parametro que tenemos 14 años, si vamos a vivir hasta los 90, nos queda x tiempo.<br>
+                </p>                              
+            </div>
+               <div class="elementovisible funcion-calculadora-bmi">
+                <h2>Funcion calculadora BMI:</h2>
+                <p> function bmiCalculadora (peso, altura){<br>
+                    var bmi = peso / (altura * altura);<br>
+                    return bmi;<br>                    
+                    }
+                    Si ahora usamos la funcion bmi, le pasamos nuestro peso y nuestra altura por parametros y nos dice nuestro bmi.<br>
+                    bmiCalculadora(80 , 1.80);
+                </p>                              
+            </div>
+            <div class="elementovisible funcion-isleap">
+                <h2>Funcion isLeap:</h2>
+                <p> function isLeap (year){<br>
+                    if(year % 4 === 0){<br>
+                        if(year % 100 === 0){<br>
+                            if(year % 400 === 0){<br>
+                                  return "Leap year";<br>
+                             } else {<br>
+                                return "not leap year";<br>
+                             } else {<br>
+                                return "leap year";<br>
+                             } else {<br>
+                                return "Not leap year";<br>
+                             }<br>
+                            }<br>
+                        }<br>                   
+                    }<br>
+                    Si ahora usamos la funcion isLeap, le pasamos el año que quieras por parametro y te dira si es leap year.<br>
+                    isLeap(2011);<br>
+                </p>                              
+            </div>
+            <div class="elementovisible funcion-fizzbuzz">
+                <h2>Funcion fizzBuzz:</h2>
+                <p>var output = []<br>
+                    var contador = 1;<br></p>
+                <p> function fizzBuzz (){<br>
+                    while(contador &lt;= 100){<br>
+                    if (contador % 3 === 0 && contador % 5 !== 0){<br>
+                        output.push("fizz");<br>
+                    } else if(contador % 3 === 0 && contador % 5 === 0){<br>
+                        output.push("FizzBuzz");<br>
+                    } else if(contador % 5 === 0){<br>
+                        output.push("Buzz")<br>
+                    } else{<br>
+                        output.push(contador);<br>           
+                    }<br>
+                    contador++;<br>
+                    console.log(output);<br>
+                }  
+                }<br>                   
+                </p>                              
+            </div>
+            <div class="elementovisible funcion-quien-paga-la-cena">
+                <h2>Funcion quienPaga:</h2>
+                  <p>function quienPaga(names){<br>   
+                    var numeroDePersonas = names.length;<br>   
+                    var personaRandom = Math.floor(Math.random() * numeroDePersonas);<br>   
+                    return personaRandom + "va a pagar";<br>   
+                  }<br>   
+                  </p>              
+            </div>
+            <div class="elementovisible funcion-calculadora">
+                <h2>Funcion Calculadora:</h2>
+                  <p>   function sumaFuncion(num1, num2){<br>   
+                        return num1+num2;<br>
+                    }<hr>   
+                        function restaFuncion(num1, num2){<br>
+                        return num1-num2;<br>
+                        }<hr> 
+                        function multiplicarFuncion(num1,num2){<br>
+                        return num1*num2;<br>
+                        }<hr> 
+                        function calculadora(num1, num2, operador){
+                            return operador (num1,num2);
+                        }
+                        caculadora(3,4,sumaFuncion) le pasamos los numeros y la funcion que queremos utilizar como operador.
+                  </p>              
+            </div>
+        </div>   
+  
+    </div>
+
+    <script src="documentacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
